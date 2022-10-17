@@ -22,7 +22,7 @@ function setup() {
 }
 
 function draw() {
-  background(220);
+  //background(220);
 
   for (i = 0; i < keyboard.range; i++) {
 
@@ -32,7 +32,7 @@ function draw() {
     let x = i * width / keyboard.range;
     let y = 0;
     let w = width / keyboard.range;
-    let h = height / 2 - isBlack * 20;
+    let h = height - isBlack * 20;
     rect(x, y, w, h);
 
   }
